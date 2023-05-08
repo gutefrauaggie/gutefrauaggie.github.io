@@ -1,14 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GERMAN QUIZ</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <div id="quiz-container">
+        <div id="gameover-modal">
+            <div id="gameover-messagebox">
+                <div id="gameover-text">
+                    GAME OVER!
+                </div>
+                <btn id="startagain">
+                    Start Again
+                </btn>
+            </div>
+        </div>
+        <div id="quiz">
+            <div id="health-meter"></div>
+            <div id="question"></div>
+            <div id="answers-container">
+                <div class="answer" id="answer2"></div>
+                <div class="answer" id="answer1"></div>
+                <div class="answer" id="answer3"></div>
+                <div class="answer" id="answer4"></div>
+            </div>
+            <div id="feedback">Filler Text</div>
+            <div id="nav">
+                <div class="btn" id="prev">
+                    <svg width="90" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"
+                            d="M13.25 8.75L9.75 12L13.25 15.25" />
+                    </svg>
+                </div>
+                <div id="q-number"></div>
+                <div class="btn" id="next">
+                    <svg width="90" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"
+                            d="M10.75 8.75L14.25 12L10.75 15.25" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 <script src="main.js"></script>
+
 </html>

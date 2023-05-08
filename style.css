@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+    text-align: center;
+    font-size: 20px;
+}
+
+body {
+    background-color: hsla(0, 0%, 20%, 1);
+}
+
+#quiz-container {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: hsla(0, 0%, 20%, 1);
+    color: hsla(0, 0%, 50%, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#quiz {
+    width: 375px;
+}
+
+#health-meter {
+    text-align: right;
+    color: hsla(359, 90%, 60%, .8);
+    min-height: 1.5em;
+}
+
+#question {
+    padding: 10px 10px;
+    margin: 10px 0px 10px 0px;
+    border: 7px ridge black;
+}
+
+.answer {
+    padding: 10px 10px;
+    margin: 10px 0px 10px 0px;
+    border: 7px ridge hsla(0, 0%, 50%, 1);
+    cursor: pointer;
+}
+
+
+#nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+.btn:active {
+    color: white;
+}
+
+.correctAnswer {
+    background-color: hsla(120, 75%, 60%, .9);
+}
+
+.wrongAnswer {
+    background-color: hsla(355, 80%, 60%, .8);
+}
+
+.correctText {
+    color: hsla(120, 50%, 80%, .8);
+}
+
+.wrongText {
+    color: hsla(355, 80%, 60%, .8);
+}
+
+
+#gameover-modal {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid pink;
+    background-color: hsla(0, 0%, 10%, .5);
+    /* visibility: hidden; */
+}
+
+#gameover-messagebox {
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: hsla(0, 0%, 50%, .95);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+
+}
+
+#gameover-text {
+    padding: 50px;
+}
+
+#startagain {
+    padding: 20px;
+    border: 1px solid pink;
+    background-color: hsla(0, 0%, 70%, 1);
+    cursor: pointer;
+    border-radius: 15px;
+
+}
